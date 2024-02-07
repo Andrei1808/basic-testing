@@ -18,7 +18,7 @@ const testCases = [
 describe('simpleCalculator', () => {
   // This test case is just to run this test suite, remove it when you write your own tests
   it.each(testCases)(
-    'should return $expected, when $a $b and $action',
+    'should return $expected, when $a $action $b',
     ({ a, b, action, expected }) => {
       const input = { a, b, action };
       const result = simpleCalculator(input);
